@@ -107,8 +107,8 @@ the application.
 
 ### Home
 
-![Task Manager Home](image.png)
+![Task Manager Home](./src/assets/image.png)
 
 ### Task Details
 
-![Task details](image-1.png)
+![Task details](./src/assets/image-1.png)
