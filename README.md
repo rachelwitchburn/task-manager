@@ -1,16 +1,114 @@
-# React + Vite
+# Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple task management application developed with React
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Task Manager is a web application that allows users to create, complete, delete and view details of their tasks.
 
-## React Compiler
+This application was developed while following a React course from the YouTube channel "Felipe Rocha - FullStack Club", in which the project was built step by step as part of the learning process. I also made additional changes and customizations based on my own requirements.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The objective was to develop and practice fundamental React concepts including components, props, state management, hooks and routing.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Add new tasks
+- Mark tasks as completed
+- Delete tasks
+- View task details
+- Navigate between pages
+- Store tasks in the browser using Local Storage
+
+## Technologies
+
+This project was developed using:
+
+- React
+- JavaScript
+- Vite
+- React Router DOM
+- Tailwind CSS
+- Lucide React
+- UUID
+
+## Getting started
+
+Follow the steps below to run the project locally.
+
+### Prerequisites
+
+Before starting, make sure you have the following installed:
+
+- Node.js
+- Git
+
+### Step 1: Clone the repository
+
+In your using terminal, run the commands:
+
+```bash
+git clone https://github.com/rachelwitchburn/task-manager.git
+```
+
+### Step 2: Navigate to the project directory
+
+```bash
+cd task-manager
+```
+
+### Step 3: Install dependencies
+
+```bash
+npm install
+```
+
+### Step 4: Start the development server
+
+```bash
+npm run dev
+```
+
+The terminal will display the local address where the application is running.
+Open it in your browser.
+
+## Project Structure
+
+src/
+├── components/
+│ ├── AddTask.jsx
+│ └── Tasks.jsx
+├── pages/
+│ └── TaskPage.jsx
+├── App.jsx
+├── index.css
+└── main.jsx
+
+- `components/` - Reusable components used by the application.
+- `pages/` - Components representing application pages.
+- `App.jsx` - Main application component and route definitions.
+- `main.jsx` - Application entry point and router configuration.
+- `index.css` - Global styles.
+
+## Routes
+
+| Route   | Description                        |
+| ------- | ---------------------------------- |
+| `/`     | Displays the task manager          |
+| `/task` | Displays the selected task details |
+
+## Data persistence
+
+Tasks are stored in the browser's Local Storage.
+
+This allows tasks to remain available even after refreshing or closing
+the application.
+
+## Screenshots
+
+### Home
+
+![Task Manager Home](image.png)
+
+### Task Details
+
+![Task details](image-1.png)
